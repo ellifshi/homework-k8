@@ -9,7 +9,7 @@ docker-compose up -d
 docker ps
 ```
 
-![docker ps](hw1.png)
+![dockerps](hw1.png)
 
 ------------
 
@@ -44,8 +44,11 @@ az acr repository show -n homework --image sha256:bf0dbbffa17382e866ae68fbd3564d
 ```
 
 ![list of repos](hw2.png)
-![image info](hw3.png)
-![images info](hw4.png)
+
+![image info1](homework33.png)
+
+![imagesinfo2](hhww4.png)
+
 
 
 ##PB3
@@ -100,7 +103,7 @@ kubectl get nodes
 
 ```
 
-![Get node ip](hw6.png)
+![Get node ip](w66.png)
 
 ```
 # Prepare the yml manifest file for creation:
@@ -114,7 +117,7 @@ kubectl get service --watch
 
 ```
 
-![Get node ip](hw7.png)
+![Get node ip2](hw77.png)
 
 
 
@@ -150,8 +153,11 @@ helm uninstall homework2-helm
 
 ```
 
-###
-HTTP:
+
+###HTTP:
+
+AZURE-VOTE
+
 http://20.72.233.47/
 
 
@@ -161,4 +167,7 @@ http://20.72.233.47/
  * Add an ingress with dns to cluster
  * HTTPS ssl for DNS
  * Seperate helm charts in the helm repo for backend and frontend.
- * 2 docker files 
+ * 2 docker files
+ * security group for incoming traffic
+ * 443 to 80 in the LB
+ * terraform insert helm release management in to process
